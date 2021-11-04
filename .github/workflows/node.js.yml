@@ -24,4 +24,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install -g @oracle/suitecloud-cli
+    - run: suitecloud account:setup
     - run: suitecloud project:deploy
